@@ -1,0 +1,33 @@
+.wrapper{
+
+    .content {
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+          font-family: Manrope;
+          font-size: 32px;
+          font-weight: 600;
+          line-height: 43.71px;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: black;
+        }
+        p {
+          font-family: Manrope;
+          font-size: 16px;
+          padding: 1rem;
+          font-weight: 500;
+          line-height: 21.86px;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+      }
+      .cardGroup{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 3rem 0;
+
+      }
+}

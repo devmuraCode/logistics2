@@ -14,6 +14,7 @@ export const CardMain:FC<IProps> = ({ title, description, kilogram, price, image
     <div className={styles.wrapper}>
         <Image src={image} alt=""/>
         <div className={styles.content}>
+            <p className={styles.title}>{title}</p>
             <p className={styles.description}>{description}</p>
             <p className={styles.kilogram}>{kilogram}</p>
             <p className={styles.price}>{price}</p>
