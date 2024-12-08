@@ -1,0 +1,19 @@
+.wrapper{
+
+    h1{
+        font-family: Manrope;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 43.71px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #000000;
+    }
+    .cardGroup{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+}

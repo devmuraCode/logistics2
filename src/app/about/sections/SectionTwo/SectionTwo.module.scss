@@ -1,0 +1,77 @@
+.wrapper {
+	background-color: #f9f9f9;
+	padding: 50px 0;
+}
+.cardGroup {
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	padding: 3rem 2rem;
+	background: #ffffff;
+}
+.title {
+	font-family: Manrope;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 43.71px;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	.icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.itemTitle {
+		font-family: Manrope;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 32.78px;
+		text-align: left;
+		color: #000000;
+	}
+
+	.description {
+		font-family: Manrope;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 21.86px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		color: #696969;
+		margin-top: 5px;
+	}
+}
+
+.imageWrapper {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+
+	.illustration {
+		max-width: 100%;
+		height: auto;
+	}
+}

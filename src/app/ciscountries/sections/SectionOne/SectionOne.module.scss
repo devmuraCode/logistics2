@@ -1,0 +1,25 @@
+.wrapper {
+	padding: 4rem 0 5rem 0;
+	.content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 11rem;
+	}
+	h1 {
+		font-family: Manrope;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 43.71px;
+		text-align: center;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		color: black;
+	}
+	.cardGroup {
+		display: flex;
+		justify-content: space-between;
+		align-self: center;
+		gap: 2rem;
+	}
+}
