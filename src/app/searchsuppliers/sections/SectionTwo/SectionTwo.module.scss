@@ -1,0 +1,36 @@
+.wrapper {
+	padding: 2rem;
+	h1 {
+		font-family: Manrope;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 43.71px;
+		text-align: center;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+        color: #000000;
+        margin-bottom: 2rem;
+    }
+}
+
+.table_block {
+	padding: 2rem;
+	border-radius: 15px;
+	background: white;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	padding: 1rem;
+	border: 1px solid #e5e7eb;
+}
+
+.text-blue-500 {
+	color: #3b82f6;
+}
