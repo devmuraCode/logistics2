@@ -31,17 +31,13 @@ const UserMenu: React.FC = () => {
 								<Link href="/transportation">Перевозка товаров</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/combineddelivery">
-									Доставка сборных товаров
-								</Link>
+								<Link href="">Доставка сборных товаров</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/containershipping">
-									Контейнерные перевозки
-								</Link>
+								<Link href="/containershipping">Контейнерные перевозки</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/chinese-sites">
+								<Link href="/commission">
 									Выкуп товаров с китайских сайтов
 								</Link>
 							</DropdownMenuItem>
@@ -53,27 +49,19 @@ const UserMenu: React.FC = () => {
 						</div>
 						<div className="flex flex-col gap-2">
 							<DropdownMenuItem asChild>
-								<Link href="/representative">
-									Представитель в Китае
-								</Link>
+								<Link href="/representative">Представитель в Китае</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/suppliersearch">
-									Поиск поставщиков в Китае
-								</Link>
+								<Link href="/suppliersearch">Поиск поставщиков в Китае</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/oem-odm">
-									Производство в Китае (OEM, ODM)
-								</Link>
+								<Link href="/manufactured">Производство в Китае (OEM, ODM)</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/suppliercheck">
-									Проверка поставщиков в Китае
-								</Link>
+								<Link href="/supplierverification">Проверка поставщиков в Китае</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/moneytransfer">
+								<Link href="/ciscountries">
 									Перевод денежных средств из России
 								</Link>
 							</DropdownMenuItem>
@@ -107,14 +95,14 @@ const UserMenu: React.FC = () => {
 						</Link>
 					</DropdownMenuItem>
 					<DropdownMenuItem asChild>
-						<Link href="/products">
+						<Link href="/marketplace">
 							<MenuItem label="Доставка товаров из Китая для маркетплейсов" />
 						</Link>
 					</DropdownMenuItem>
 				</DropdownMenuContent>
 			</DropdownMenu>
 
-			<Link href="/products">
+			<Link href="/cargotransportation">
 				<MenuItem label="Карго доставка из Китая" />
 			</Link>
 		</div>

@@ -17,6 +17,9 @@
     align-items: center;
     gap: 10px;
   }
+  .description{
+    min-height: 90px;
+  }
 
   .title, .description, .kilogram, .price {
     font-family: 'Manrope', sans-serif;
