@@ -31,15 +31,13 @@ const UserMenu: React.FC = () => {
 								<Link href="/transportation">Перевозка товаров</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="">Доставка сборных товаров</Link>
+								<Link href="/transportation">Доставка сборных товаров</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
 								<Link href="/containershipping">Контейнерные перевозки</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/commission">
-									Выкуп товаров с китайских сайтов
-								</Link>
+								<Link href="/commission">Выкуп товаров с китайских сайтов</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
 								<Link href="/marketplaces">
@@ -55,10 +53,14 @@ const UserMenu: React.FC = () => {
 								<Link href="/searchsuppliers">Поиск поставщиков в Китае</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/manufactured">Производство в Китае (OEM, ODM)</Link>
+								<Link href="/manufactured">
+									Производство в Китае (OEM, ODM)
+								</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/supplierverification">Проверка поставщиков в Китае</Link>
+								<Link href="/supplierverification">
+									Проверка поставщиков в Китае
+								</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
 								<Link href="/ciscountries">
@@ -85,12 +87,12 @@ const UserMenu: React.FC = () => {
 				<DropdownMenuContent>
 					<DropdownMenuSeparator />
 					<DropdownMenuItem asChild>
-						<Link href="/products">
+						<Link href="/transportation">
 							<MenuItem label="Перевозка товаров" />
 						</Link>
 					</DropdownMenuItem>
 					<DropdownMenuItem asChild>
-						<Link href="/products">
+						<Link href="/commission">
 							<MenuItem label="Выкуп товаров с китайских сайтов" />
 						</Link>
 					</DropdownMenuItem>
