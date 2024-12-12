@@ -52,7 +52,7 @@ const UserMenu: React.FC = () => {
 								<Link href="/representative">Представитель в Китае</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/suppliersearch">Поиск поставщиков в Китае</Link>
+								<Link href="/searchsuppliers">Поиск поставщиков в Китае</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
 								<Link href="/manufactured">Производство в Китае (OEM, ODM)</Link>
