@@ -40,7 +40,7 @@ const UserMenu: React.FC = () => {
 								<Link href="/commission">Выкуп товаров с китайских сайтов</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem asChild>
-								<Link href="/marketplaces">
+								<Link href="/marketplace">
 									Доставка товаров из Китая для маркетплейсов
 								</Link>
 							</DropdownMenuItem>

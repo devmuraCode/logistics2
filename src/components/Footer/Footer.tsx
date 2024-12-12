@@ -10,7 +10,7 @@ import support from '@/assets/support.svg'
 export const Footer = () => {
   return (
     <div className={styles.wrapper}>
-      <Container>
+
         <div className={styles.logo}>
           <Logo />
         </div>
@@ -58,7 +58,7 @@ export const Footer = () => {
           </div>
         </div>
         <p className={styles.copyright}>Все права защищены © 2024 - Legacy Express</p>
-      </Container>
+
     </div>
   );
 }

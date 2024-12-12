@@ -40,7 +40,7 @@ export const SectionTwo = () => {
 					<div className={styles.step}>
 						<div className={styles.icon}>
 							<Image src={solar_file} alt="marketeq_research" />
-							<h2>4</h2>
+							<h2>6</h2>
 						</div>
 						<p>Выполнение выходного аудита</p>
 					</div>
@@ -54,7 +54,7 @@ export const SectionTwo = () => {
 					<div className={styles.step}>
 						<div className={styles.icon}>
 							<Image src={paper} alt="marketeq_research" />
-							<h2>6</h2>
+							<h2>4</h2>
 						</div>
 						<p>Окончательное согласование технического задания</p>
 					</div>
