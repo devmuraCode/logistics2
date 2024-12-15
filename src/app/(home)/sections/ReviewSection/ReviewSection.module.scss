@@ -1,12 +1,13 @@
 .wrapper {
-	width: 100%;
-	background: url("../../../../assets/rew.png") no-repeat center center;
-	height: auto;
 	.content {
-        display: flex;
-		margin: 0 auto;
+		display: flex;
 		align-items: center;
+		padding-top: 30rem;
+		width: 100%;
+		background: url("../../../../assets/rew5.png") no-repeat center center/contain;
+		height: 100vh;
 		padding: 20px;
+		margin: 0 auto;
 
 		h1 {
 			font-family: "Manrope", sans-serif;
@@ -16,26 +17,6 @@
 			text-align: left;
 			color: white;
 			margin-bottom: 20px;
-		}
-
-		.reviews {
-			max-width: 50%;
-			min-width: 300px;
-			margin-bottom: 20px;
-		}
-
-		.imageContainer {
-			max-width: 40%;
-			min-width: 200px;
-			display: flex;
-			justify-content: center;
-            object-fit: cover;
-
-			img {
-				max-width: 100%;
-				height: auto;
-                object-fit: cover;
-			}
 		}
 	}
 }

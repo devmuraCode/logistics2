@@ -16,9 +16,6 @@ export const ReviewSection = () => {
 						</h1>
 						<Button>Связаться с нами</Button>
 					</div>
-					<div className={styles.imageContainer}>
-						<Image src={img} alt="Иконка отзывов" />
-					</div>
 				</div>
 			</Container>
 		</div>
