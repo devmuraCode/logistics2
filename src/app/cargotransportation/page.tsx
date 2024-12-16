@@ -5,6 +5,7 @@ import { SectionOne } from "./sections/SectionOne/SectionOne";
 import { SectionThree } from "./sections/SectionThree/SectionThree";
 import { SectionTwo } from "./sections/SectionTwo/SectionTwo";
 import { SectionFive } from "./sections/SectionFive/SectionFive";
+import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 
 export default function TransportationFromChina() {
 	return (
@@ -16,6 +17,7 @@ export default function TransportationFromChina() {
 			<SectionFor />
 			<Advantages/>
 			<SectionFive/>
+			<ReviewSection/>
 		</div>
 	);
 }

@@ -5,6 +5,7 @@ import { SectionFor } from "./sections/SectionFor/SectionFor";
 import { Advantages } from "@/components/Advantages/Advantages";
 import { DownDocs } from "../(home)/sections/DownDocs/DownDocs";
 import { SectionFive } from "./sections/SectionFive/SectionFive";
+import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 
 
 export default function Transportation() {
@@ -17,6 +18,7 @@ export default function Transportation() {
             <Advantages/>
             <DownDocs/>
             <SectionFive/>
+            <ReviewSection/>
         </div>
     );
 }

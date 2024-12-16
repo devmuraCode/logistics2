@@ -1,8 +1,8 @@
 import Container from "@/components/Container";
 import styles from "./ReviewSection.module.scss";
 import { Button } from "@/components/ui/button";
+import rrr from "@/assets/rrr.svg";
 import Image from "next/image";
-import img from "@/assets/rew3.svg";
 
 export const ReviewSection = () => {
 	return (
@@ -14,8 +14,9 @@ export const ReviewSection = () => {
 							Остались вопросы? <br />
 							Свяжитесь с нами
 						</h1>
-						<Button>Связаться с нами</Button>
+						<Button className={styles.contactButton}>Связаться с нами</Button>
 					</div>
+					<Image src={rrr} alt="" />
 				</div>
 			</Container>
 		</div>

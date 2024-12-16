@@ -47,8 +47,8 @@ export const Header = () => {
               </div>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className={styles.previous} />
+          <CarouselNext className={styles.next} />
         </Carousel>
       </Container>
     </div>

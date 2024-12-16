@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { GrBottomCorner } from "react-icons/gr";
+import { IoIosArrowDown } from "react-icons/io";
 import MenuItem from "./MenuList";
 import {
 	DropdownMenu,
@@ -21,7 +21,7 @@ const UserMenu: React.FC = () => {
 				<DropdownMenuTrigger asChild>
 					<div className="flex items-center cursor-pointer">
 						<MenuItem label="Услуги" />
-						<GrBottomCorner className="ml-0.5 text-sm" />
+						<IoIosArrowDown className="ml-0.5 text-lg" />
 					</div>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent className="p-4">
@@ -76,12 +76,12 @@ const UserMenu: React.FC = () => {
 				<MenuItem label="О Нас" />
 			</Link>
 
-			{/* DropdownMenu for Помощь */}
+
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
 					<div className="flex items-center cursor-pointer">
 						<MenuItem label="Помощь" />
-						<GrBottomCorner className="ml-0.5 text-sm" />
+						<IoIosArrowDown className="ml-0.5 text-lg" />
 					</div>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent>

@@ -1,3 +1,4 @@
+import { ReviewSection } from "../(home)/sections/ReviewSection/ReviewSection";
 import { Header } from "./sections/Header/Header";
 import { SectionOne } from "./sections/SectionOne/SectionOne";
 import { SectionThree } from "./sections/SectionThree/SectionThree";
@@ -11,6 +12,7 @@ export default function About () {
             <SectionOne/>
             <SectionTwo/>
             <SectionThree/>
+            <ReviewSection/>
         </div>
     );
 }
