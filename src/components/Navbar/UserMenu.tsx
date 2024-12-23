@@ -12,7 +12,7 @@ import {
 
 const UserMenu: React.FC = () => {
 	return (
-		<div className="flex flex-col gap-7 md:flex-row">
+		<div className="flex flex-col gap-5 md:flex-row md:gap-7">
 			<Link href="/">
 				<MenuItem label="Главное" />
 			</Link>
@@ -24,8 +24,8 @@ const UserMenu: React.FC = () => {
 						<IoIosArrowDown className="ml-0.5 text-lg" />
 					</div>
 				</DropdownMenuTrigger>
-				<DropdownMenuContent className="p-4">
-					<div className="grid grid-cols-2 gap-4">
+				<DropdownMenuContent className="p-4 md:w-max">
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 						<div className="flex flex-col gap-2">
 							<DropdownMenuItem asChild>
 								<Link href="/transportation">Перевозка товаров</Link>
@@ -44,7 +44,6 @@ const UserMenu: React.FC = () => {
 									Доставка товаров из Китая для маркетплейсов
 								</Link>
 							</DropdownMenuItem>
-							
 						</div>
 						<div className="flex flex-col gap-2">
 							<DropdownMenuItem asChild>
@@ -76,7 +75,6 @@ const UserMenu: React.FC = () => {
 			<Link href="/about">
 				<MenuItem label="О Нас" />
 			</Link>
-
 
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
