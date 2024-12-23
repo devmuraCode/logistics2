@@ -15,14 +15,14 @@ export const SectionFor = () => {
 								<Image src={img} alt="" />
 								<h3>Договоры и оферта на доставку из Китая </h3>
 							</div>
-							<Button>Скачать файл</Button>
+							<Button className={styles.button}>Скачать файл</Button>
 						</div>
 						<div className={styles.downcard}>
 							<div className={styles.inner}>
 								<Image src={img} alt="" />
 								<h3>Прайс на Карго досавку</h3>
 							</div>
-							<Button>Скачать файл</Button>
+							<Button className={styles.button}>Скачать файл</Button>
 						</div>
 					</div>
 				</div>

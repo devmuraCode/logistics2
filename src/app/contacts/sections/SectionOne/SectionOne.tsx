@@ -15,9 +15,9 @@ export const SectionOne = () => {
 			<Container>
 				<div className={styles.section}>
 					{/* Address Card */}
+					<h3>Наш адрес</h3>
 					<div className={styles.adress_card}>
 						<div className={styles.card_adress}>
-							<h3>Наш адрес</h3>
 							<div className={styles.icon}>
 								<Image src={LocationImage} alt="Location" />
 								<p>

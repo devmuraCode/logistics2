@@ -2,28 +2,29 @@
 	background-color: #f9f9f9;
 	padding: 50px 0;
 }
+
 .cardGroup {
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	padding: 3rem 2rem;
 	background: #ffffff;
+	border-radius: 10px;
 }
+
 .title {
-	font-family: Manrope;
+	font-family: Manrope, sans-serif;
 	font-size: 32px;
 	font-weight: 600;
-	line-height: 43.71px;
+	line-height: 1.4;
 	text-align: center;
-	text-underline-position: from-font;
-	text-decoration-skip-ink: none;
 	color: #000000;
 	margin-bottom: 30px;
 }
 
 .content {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	gap: 2rem;
 }
 
 .list {
@@ -44,22 +45,18 @@
 	}
 
 	.itemTitle {
-		font-family: Manrope;
+		font-family: Manrope, sans-serif;
 		font-size: 24px;
 		font-weight: 600;
-		line-height: 32.78px;
-		text-align: left;
+		line-height: 1.4;
 		color: #000000;
 	}
 
 	.description {
-		font-family: Manrope;
+		font-family: Manrope, sans-serif;
 		font-size: 16px;
 		font-weight: 500;
-		line-height: 21.86px;
-		text-align: left;
-		text-underline-position: from-font;
-		text-decoration-skip-ink: none;
+		line-height: 1.4;
 		color: #696969;
 		margin-top: 5px;
 	}
@@ -73,5 +70,72 @@
 	.illustration {
 		max-width: 100%;
 		height: auto;
+		border-radius: 10px;
+	}
+}
+
+/* Адаптация для планшетов и мобильных устройств */
+@media (max-width: 768px) {
+	.content {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.list {
+		gap: 20px;
+	}
+
+	.item {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 20px;
+
+		.icon {
+			width: 35px;
+			height: 35px;
+		}
+
+		.itemTitle {
+			font-size: 20px;
+		}
+
+		.description {
+			font-size: 14px;
+		}
+	}
+
+	.imageWrapper {
+		order: -1; /* Перемещаем изображение наверх */
+		margin-bottom: 2rem;
+
+		.illustration {
+			max-width: 100%;
+		}
+	}
+
+	.title {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 480px) {
+	.cardGroup {
+		padding: 2rem 1rem;
+	}
+
+	.title {
+		font-size: 24px;
+	}
+
+	.itemTitle {
+		font-size: 18px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+
+	.imageWrapper {
+		margin-bottom: 1rem;
 	}
 }

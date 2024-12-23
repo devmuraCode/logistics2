@@ -24,6 +24,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+
       .cardGroup {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -34,6 +35,7 @@
   }
 }
 
+/* Адаптивные стили */
 @media (max-width: 768px) {
   .wrapper {
     padding: 20px 0;
@@ -45,10 +47,16 @@
 
     .content {
       gap: 30px;
+    }
 
-      .cardGroup {
-        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
-      }
+    .individuals,
+    .legal {
+      gap: 16px;
+    }
+
+    .cardGroup {
+      grid-template-columns: 1fr !important; /* Одна колонка на мобильных устройствах */
+      gap: 16px; /* Уменьшение отступов между карточками */
     }
   }
 }

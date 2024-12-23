@@ -1,9 +1,6 @@
 import Container from "@/components/Container";
 import styles from "./SectionThree.module.scss";
 import Image from "next/image";
-import bank from "@/assets/bank.png";
-import cam from "@/assets/cam.png";
-import { CardMain } from "@/components/CardMain/CardMain";
 import support from "@/assets/support.svg";
 import yuan from '@/assets/yuan.svg'
 import check from '@/assets/check-.svg'
@@ -17,50 +14,10 @@ export const SectionThree = () => {
 		<div className={styles.wrapper}>
 			<Container>
 				<div className={styles.content}>
-					<div className={styles.text}>
-						<h1>Какими способами осуществляются переводы в Китай?</h1>
-						<p>
-							Вам важно, чтобы оплата поставщикам в Китай была надежной? Хотите
-							уберечь себя от мошенников? Мы с удовольствием окажем вам свои
-							услуги!
-						</p>
-					</div>
-					<div className={styles.card_outline}>
-						<div className={styles.card}>
-							<Image src={bank} alt="" />
-							<div className={styles.text}>
-								<h3>Банковский перевод</h3>
-								<p>
-									Денежные переводы между юридическими лицами с возможностью
-									оплаты доллара или юаня на юридическое или физическое лицо в
-									Китае.
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<Image src={cam} alt="" />
-							<div className={styles.text}>
-								<h3>Наличные</h3>
-								<p>
-									Примем наличные рубли или доллары США и выдадим юань
-									поставщику в Китае
-								</p>
-							</div>
-						</div>
-						<div className={styles.card}>
-							<Image src={bank} alt="" />
-							<div className={styles.text}>
-								<h3>Переводы от Физ-х лиц</h3>
-								<p>
-									Примем деньги от физического лица и выдадим юань поставщику в
-									Китае
-								</p>
-							</div>
-						</div>
-					</div>
-
 					<div className={styles.text_2}>
-						<h1>Какие шаги нужно выполнить для отправки денег в Китай?</h1>
+						<h1 className={styles.title}>
+							Какие шаги нужно выполнить для отправки денег в Китай?
+						</h1>
 						<div className={styles.steps}>
 							<div className={styles.step}>
 								<Image src={support} alt="" />
@@ -96,14 +53,14 @@ export const SectionThree = () => {
 					</div>
 
 					<div>
-						<h1 className={styles.title_h1}>Сопутствующие услуги</h1>
+						<h1 className={styles.title}>Сопутствующие услуги</h1>
 						<div className={styles.cardGroup}>
 							<div className={`${styles.card} ${styles.topLeft}`}>
 								<div className={styles.topAccent}></div>
 								<div className={styles.icon}>
 									<Image src={year} alt="Icon" />
 								</div>
-								<div className={styles.title}>
+								<div >
 									Производство в Китае под собственным брендом (OEM, ODM){" "}
 								</div>
 							</div>

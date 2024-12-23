@@ -6,6 +6,8 @@ import Container from "../Container";
 import UserMenu from "./UserMenu";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import styles from "./Navbar.module.scss";
+import useRegisterModal from "@/hooks/useRegisterModal";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,6 +16,7 @@ const Navbar: React.FC = () => {
 		setMobileMenuOpen((prev) => !prev);
 	};
 
+	const registerModal = useRegisterModal();
 	return (
 		<Container>
 			<div
@@ -28,9 +31,9 @@ const Navbar: React.FC = () => {
 						<div className="hidden md:flex gap-6 items-center">
 							<UserMenu />
 							<div className={styles.loginRegister}>
-								<a href="/login" className={styles.loginLink}>
+								<button onClick={registerModal.onOpen} className={styles.loginLink}>
 									Вход/Регистрация
-								</a>
+								</button>
 								<button className={styles.contactButton}>
 									Связаться с нами
 								</button>
@@ -54,9 +57,12 @@ const Navbar: React.FC = () => {
 					<div className={styles.mobileMenu}>
 						<UserMenu />
 						<div className="flex flex-col gap-3 mt-4">
-							<a href="/login" className={styles.loginLink}>
+							<button
+								className={styles.loginLink}
+								onClick={registerModal.onOpen}
+							>
 								Вход/Регистрация
-							</a>
+							</button>
 							<button className={styles.contactButton}>Связаться с нами</button>
 						</div>
 					</div>

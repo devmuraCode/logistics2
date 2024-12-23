@@ -11,7 +11,7 @@ export const SectionFive = () => {
 		<div className={styles.wrapper}>
 			<Container>
 				<div>
-					<h1>Сопутствующие услуги</h1>
+					<h1 className={styles.titleh1}>Сопутствующие услуги</h1>
 
 					<div className={styles.cardGroup}>
 						<div className={`${styles.card} ${styles.topLeft}`}>

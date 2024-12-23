@@ -1,13 +1,22 @@
 .wrapper {
 	background-color: #f9fafe; // Light background color
 	padding: 50px 0;
+
 	.header {
 		background: #2563eb26;
 		border-radius: 15px;
 		text-align: center;
 		margin-bottom: 40px;
 		padding: 2rem 0;
+
+		/* Убираем фон и нижнюю границу для мобильных устройств */
+		@media (max-width: 768px) {
+			background: none; /* Убираем фон */
+			border-radius: 0; /* Убираем скругление углов */
+			padding: 1.5rem 0; /* Уменьшаем отступы */
+		}
 	}
+
 	.title {
 		text-align: center;
 		font-size: 24px;
@@ -27,12 +36,25 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
+
+		/* Убираем нижнюю границу для мобильных устройств */
+		@media (max-width: 768px) {
+			&::before {
+				display: none; /* Убираем линию */
+			}
+		}
 	}
 
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(300px, 1fr));
 		gap: 20px;
+
+		/* Адаптивные стили для мобильных устройств */
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr; /* Одноколоночный макет */
+			gap: 15px; /* Уменьшаем расстояние между карточками */
+		}
 	}
 
 	.card {

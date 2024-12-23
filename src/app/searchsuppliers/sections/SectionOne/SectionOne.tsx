@@ -13,7 +13,7 @@ export const SectionOne = () => {
 		<div className={styles.wrapper}>
 			<Container>
 				<div>
-					<h1>Кому полезны услуги по поиску поставщиков в Китае</h1>
+					<h1 className={styles.h1}>Кому полезны услуги по поиску поставщиков в Китае</h1>
 					<div className={styles.cardGroup}>
 						<CardMain
 							description="Начинающим предпринимателям"

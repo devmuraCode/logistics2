@@ -6,6 +6,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
+		h3 {
+			font-size: 1.5rem;
+			color: #333;
+			margin-bottom: 20px;
+			text-align: center;
+		}
 		.adress_card {
 			display: flex;
 			align-items: center;
@@ -19,8 +25,10 @@
 
 			.card_adress {
 				width: 411px;
+
 				.image {
 					width: 100%;
+					margin-bottom: 20px;
 				}
 
 				h3 {
@@ -47,13 +55,6 @@
 						line-height: 1.4;
 					}
 				}
-			}
-
-			img {
-				max-width: 300px;
-				width: 100%;
-				border-radius: 8px;
-				object-fit: cover;
 			}
 		}
 
@@ -106,10 +107,21 @@
 	.section {
 		.adress_card {
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center; /* Выравниваем по центру */
+			padding: 15px;
+
+			.card_adress {
+				width: 100% !important; /* Полная ширина */
+				order: 3;
+				h3 {
+					order: 1;
+				}
+			}
 
 			img {
-				max-width: 100%;
+				max-width: 100%; /* Убираем ограничения по ширине */
+				margin-bottom: 20px; /* Отступ снизу */
+				order: 2;
 			}
 		}
 
@@ -120,6 +132,7 @@
 
 			.card {
 				padding: 15px;
+				width: 100%;
 
 				h3 {
 					font-size: 1.25rem;
